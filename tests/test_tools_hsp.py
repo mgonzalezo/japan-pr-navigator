@@ -168,3 +168,58 @@ def test_case_insensitive_inputs(knowledge_dir: Path) -> None:
     )
     assert result["breakdown"]["education"] == 20
     assert result["breakdown"]["japanese_ability"] == 10
+
+
+def test_education_aliases(knowledge_dir: Path) -> None:
+    from japan_pr_mcp.knowledge_base import KnowledgeBase
+    from japan_pr_mcp.tools.hsp_points import check_hsp_points
+
+    kb = KnowledgeBase.load(knowledge_dir)
+    aliases = {
+        "master": 20, "Master": 20, "master's": 20, "MBA": 20, "MSc": 20,
+        "bachelor": 10, "Bachelor": 10, "bachelor's": 10, "BSc": 10,
+        "phd": 30, "PhD": 30, "Ph.D": 30, "doctoral": 30,
+    }
+    for alias, expected in aliases.items():
+        result = check_hsp_points(
+            kb, age=30, salary_jpy=5_000_000, education=alias,
+            experience_years=5,
+        )
+        assert result["breakdown"]["education"] == expected, (
+            f"education='{alias}' gave {result['breakdown']['education']}, expected {expected}"
+        )
+
+
+def test_jlpt_aliases(knowledge_dir: Path) -> None:
+    from japan_pr_mcp.knowledge_base import KnowledgeBase
+    from japan_pr_mcp.tools.hsp_points import check_hsp_points
+
+    kb = KnowledgeBase.load(knowledge_dir)
+    aliases = {
+        "n1": 15, "N1": 15, "jlpt n1": 15, "JLPT-N1": 15,
+        "n2": 10, "N2": 10, "jlpt n2": 10,
+        "none": 0, "": 0,
+    }
+    for alias, expected in aliases.items():
+        result = check_hsp_points(
+            kb, age=30, salary_jpy=5_000_000, education="bachelors",
+            experience_years=5, jlpt_level=alias,
+        )
+        assert result["breakdown"]["japanese_ability"] == expected, (
+            f"jlpt_level='{alias}' gave {result['breakdown']['japanese_ability']}, expected {expected}"
+        )
+
+
+def test_string_numeric_inputs_coerced(knowledge_dir: Path) -> None:
+    from japan_pr_mcp.knowledge_base import KnowledgeBase
+    from japan_pr_mcp.tools.hsp_points import check_hsp_points
+
+    kb = KnowledgeBase.load(knowledge_dir)
+    result = check_hsp_points(
+        kb, age="35", salary_jpy="9000000", education="masters",  # type: ignore[arg-type]
+        experience_years="10", jlpt_level="N2",  # type: ignore[arg-type]
+    )
+    assert result["breakdown"]["salary"] == 35
+    assert result["breakdown"]["age"] == 5
+    assert result["breakdown"]["experience"] == 20
+    assert result["total_points"] >= 70

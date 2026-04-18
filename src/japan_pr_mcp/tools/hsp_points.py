@@ -6,6 +6,46 @@ from typing import Any
 
 from japan_pr_mcp.knowledge_base import KnowledgeBase
 
+EDUCATION_ALIASES: dict[str, str] = {
+    "master": "masters",
+    "master's": "masters",
+    "mba": "masters",
+    "msc": "masters",
+    "ma": "masters",
+    "bachelor": "bachelors",
+    "bachelor's": "bachelors",
+    "bsc": "bachelors",
+    "ba": "bachelors",
+    "undergrad": "bachelors",
+    "phd": "doctorate",
+    "ph.d": "doctorate",
+    "ph.d.": "doctorate",
+    "doctoral": "doctorate",
+    "doctor": "doctorate",
+}
+
+JLPT_ALIASES: dict[str, str] = {
+    "n1": "N1",
+    "n2": "N2",
+    "jlpt n1": "N1",
+    "jlpt n2": "N2",
+    "jlpt-n1": "N1",
+    "jlpt-n2": "N2",
+}
+
+
+def _normalize_education(value: str) -> str:
+    value = value.lower().strip()
+    return EDUCATION_ALIASES.get(value, value)
+
+
+def _normalize_jlpt(value: str) -> str:
+    value = value.strip()
+    lowered = value.lower()
+    if lowered == "none" or lowered == "":
+        return "none"
+    return JLPT_ALIASES.get(lowered, value.upper())
+
 
 def check_hsp_points(
     kb: KnowledgeBase,
@@ -16,12 +56,16 @@ def check_hsp_points(
     jlpt_level: str = "none",
     bonus: list[str] | None = None,
 ) -> dict[str, Any]:
+    age = int(age)
+    salary_jpy = int(salary_jpy)
+    experience_years = int(experience_years)
+
     table = kb.get_hsp_table()
     categories = {c["name"]: c for c in table["categories"]}
     thresholds = table["thresholds"]
 
-    education = education.lower()
-    jlpt_level = jlpt_level.upper() if jlpt_level.lower() != "none" else "none"
+    education = _normalize_education(education)
+    jlpt_level = _normalize_jlpt(jlpt_level)
 
     breakdown: dict[str, int] = {}
 
