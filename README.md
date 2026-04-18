@@ -143,31 +143,7 @@ Open your MCP client and ask away:
 
 ## Architecture
 
-```
-You (natural language question)
-  |
-  v
-+-----------------------------+
-|  MCP Client                 |
-|  (LM Studio / Claude / CLI) |
-|                             |
-|  LLM reasons about your     |
-|  question and decides which  |
-|  MCP tools to call           |
-+----------+------------------+
-           | MCP Protocol (stdio)
-           v
-+-----------------------------+
-|  japan-pr-mcp-server        |
-|  (FastMCP 3.x / Python)    |
-|                             |
-|  6 Tools + 4 Resources      |
-|  +------------------------+ |
-|  | Curated Knowledge Base | |
-|  | (YAML - ships w/ repo) | |
-|  +------------------------+ |
-+-----------------------------+
-```
+![Architecture](architecture_PR_LLM.png)
 
 ### Resource Efficiency
 
