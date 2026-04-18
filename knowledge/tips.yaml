@@ -1,0 +1,80 @@
+tips:
+  - id: "tip_001"
+    category: "phase_1"
+    title: "Salary Prospect Certificate template"
+    content: |
+      Many HR departments do not have a template for the Salary Prospect Certificate (給与見込証明書).
+      It must include: company name/address/issue date, employee full name/ID/DOB/address,
+      job title, hire date, employment type, employment period, working hours/week,
+      annual base salary, variable incentive details, and the official company seal (社印) in red ink.
+    source: "community"
+    verified: true
+    last_updated: "2025-03-15"
+
+  - id: "tip_002"
+    category: "phase_1"
+    title: "Statement of Reasons best practices"
+    content: |
+      Do not just say you like Japan. Clearly articulate the concrete impact you have already made
+      through your work and how you plan to impact Japanese society moving forward.
+      Submit in both English and Japanese for maximum clarity.
+    source: "community"
+    verified: true
+    last_updated: "2025-03-15"
+
+  - id: "tip_003"
+    category: "phase_2"
+    title: "Black out sensitive numbers"
+    content: |
+      Use a black marker to cross out sensitive privacy numbers on copies:
+      MyNumber on the Juminhyo (Certificate of Residence),
+      Insurer Number and Symbol on Health Insurance cards,
+      and QR codes on insurance copies.
+      If you forget, they will reject the copies on the spot.
+    source: "community"
+    verified: true
+    last_updated: "2025-03-15"
+
+  - id: "tip_004"
+    category: "phase_3"
+    title: "Additional document requests are a good sign"
+    content: |
+      Receiving a Notice of Request for Materials (資料請求通知書) means your file
+      is on the final reviewer's desk and they are actively trying to approve you.
+      Do not panic. Respond as quickly as possible.
+    source: "community"
+    verified: true
+    last_updated: "2025-03-15"
+
+  - id: "tip_005"
+    category: "phase_4"
+    title: "Buy Revenue Stamp before going to Immigration"
+    content: |
+      The PR issuance fee is 10,000 JPY paid via Revenue Stamp (収入印紙).
+      Some branch offices (e.g., Hamamatsu) no longer sell stamps on-site.
+      Buy at a Post Office before heading to Immigration.
+    source: "community"
+    verified: true
+    last_updated: "2025-03-15"
+
+  - id: "tip_006"
+    category: "general"
+    title: "Processing time varies dramatically by office"
+    content: |
+      Tokyo can take up to 2 years. Smaller offices like Hamamatsu may process
+      in 4-6 months. The same application quality gets very different timelines
+      depending on your local office's volume.
+    source: "community"
+    verified: true
+    last_updated: "2025-03-15"
+
+  - id: "tip_007"
+    category: "phase_1"
+    title: "Guarantor requirements"
+    content: |
+      Your guarantor must be a Japanese national or permanent resident.
+      You need their employment certificate, tax certificate, resident certificate,
+      and a copy of their ID. Ask them early as collecting these takes time.
+    source: "community"
+    verified: true
+    last_updated: "2025-03-15"

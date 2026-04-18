@@ -1,0 +1,90 @@
+phases:
+  - phase: 1
+    title: "Document Collection"
+    title_jp: "書類収集"
+    description: "Gathering all required documents. This is the heaviest lift."
+    estimated_duration: "2-4 weeks"
+    key_steps:
+      - "Download and fill out the Application Form (永住許可申請書)"
+      - "Write your Statement of Reasons in both English and Japanese"
+      - "Calculate your HSP points and gather proof documents"
+      - "Obtain Certificate of Residence (住民票) with My Number omitted"
+      - "Request Certificate of Employment and Salary Prospect Certificate from employer"
+      - "Obtain tax certificates from your municipality"
+      - "Get pension records from Nenkin Net or local pension office"
+      - "Make copies of passport, residence card, health insurance card"
+      - "Prepare bank statements showing financial stability"
+      - "Arrange guarantor and collect their documents"
+      - "If married: collect spouse's tax, pension, and insurance documents"
+      - "Take home photos and family/coworker snapshots"
+    tips:
+      - "Double-check your point calculation before starting document collection"
+      - "Collect employment or evaluation letters in English for each past employer"
+      - "Focus heavily on your Reason Letter: articulate your concrete impact in Japan and future plans"
+      - "If married, your spouse's documents are a major extra hurdle even if finances are separate"
+    common_mistakes:
+      - "Forgetting to omit My Number from the Certificate of Residence"
+      - "Not getting the official company seal (shaiin) in red ink on the Salary Prospect Certificate"
+      - "Writing a generic Reason Letter instead of highlighting concrete contributions"
+
+  - phase: 2
+    title: "Immigration Application"
+    title_jp: "入国管理局での申請"
+    description: "Physically visiting the Immigration Bureau to submit your application."
+    estimated_duration: "1 day (half day if you arrive early)"
+    key_steps:
+      - "Identify your jurisdictional Immigration Bureau based on your residential address"
+      - "Arrive as early as possible, ideally before doors open"
+      - "Pull a queue ticket at the PR application counter"
+      - "Hand over your complete document stack"
+      - "Show your original passport and residence card"
+      - "Receive the Reception Slip (申請受付票) stapled into your passport"
+    tips:
+      - "Go as early as possible to get an early queue ticket"
+      - "Use a black marker to cross out MyNumber on Juminhyo and Insurer Number/QR codes on insurance copies"
+      - "If you forget to black out sensitive numbers, they will reject the copies on the spot"
+      - "Bring originals of everything even if only copies are required"
+    common_mistakes:
+      - "Not blacking out MyNumber on the Certificate of Residence"
+      - "Not blacking out insurer numbers and QR codes on health insurance copies"
+      - "Arriving late and getting a very long wait time"
+
+  - phase: 3
+    title: "Additional Documentation Submission"
+    title_jp: "追加書類の提出"
+    description: "Responding to Immigration's request for additional materials. This is actually a good sign."
+    estimated_duration: "1-4 weeks after receiving the notice (typically around month 4)"
+    key_steps:
+      - "Receive the Notice of Request for Materials (資料請求通知書) by mail"
+      - "Read carefully whether they require Originals (原本) or Copies (写し)"
+      - "Gather the requested additional documents"
+      - "Submit as quickly as possible to avoid delaying approval"
+    tips:
+      - "Do not panic: receiving this notice means your file is on the final reviewer's desk"
+      - "Government certificates usually must be originals, not copies"
+      - "Respond as quickly as possible"
+      - "For married applicants: be prepared for requests about spouse's insurance and taxes from previous cities"
+    common_mistakes:
+      - "Panicking and thinking the request means rejection"
+      - "Submitting copies when originals were requested"
+      - "Taking too long to respond, delaying the approval"
+
+  - phase: 4
+    title: "Residence Card Pickup"
+    title_jp: "在留カードの受取"
+    description: "Receiving your PR approval and picking up the new residence card."
+    estimated_duration: "1 day"
+    key_steps:
+      - "Receive the approval postcard by mail"
+      - "Buy a 10,000 JPY Revenue Stamp (収入印紙) at a Post Office"
+      - "Visit the Immigration Bureau with: postcard, passport, old residence card, and revenue stamp"
+      - "Submit documents and receive your new Permanent Resident card"
+    tips:
+      - "Check the postcard for the exact fee amount and pickup deadline"
+      - "Buy the Revenue Stamp at a Post Office BEFORE going to Immigration"
+      - "Some offices no longer sell Revenue Stamps on-site"
+      - "The entire pickup process takes about 10 minutes"
+    common_mistakes:
+      - "Arriving at Immigration without the Revenue Stamp"
+      - "Missing the pickup deadline on the postcard"
+      - "Not checking whether the fee has been revised"

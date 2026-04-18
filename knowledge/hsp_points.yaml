@@ -1,0 +1,123 @@
+hsp_points:
+  description: "Highly Skilled Professional (HSP) Point Calculation Table for Permanent Residence"
+  thresholds:
+    fast_track_3_year: 70
+    fast_track_1_year: 80
+
+  categories:
+    - name: "education"
+      label_en: "Academic Background"
+      label_jp: "学歴"
+      options:
+        - value: "doctorate"
+          points: 30
+          description: "Doctoral degree"
+        - value: "masters"
+          points: 20
+          description: "Master's degree"
+        - value: "bachelors"
+          points: 10
+          description: "Bachelor's degree"
+        - value: "none"
+          points: 0
+          description: "No degree or below bachelor's"
+
+    - name: "experience"
+      label_en: "Professional Experience"
+      label_jp: "職歴"
+      brackets:
+        - min_years: 10
+          points: 20
+        - min_years: 7
+          max_years: 9
+          points: 15
+        - min_years: 5
+          max_years: 6
+          points: 10
+        - min_years: 3
+          max_years: 4
+          points: 5
+        - min_years: 0
+          max_years: 2
+          points: 0
+
+    - name: "salary"
+      label_en: "Annual Salary"
+      label_jp: "年収"
+      note: "Annual salary in JPY (excluding bonuses for some visa categories)"
+      brackets:
+        - min_jpy: 10000000
+          points: 40
+        - min_jpy: 9000000
+          max_jpy: 9999999
+          points: 35
+        - min_jpy: 8000000
+          max_jpy: 8999999
+          points: 30
+        - min_jpy: 7000000
+          max_jpy: 7999999
+          points: 25
+        - min_jpy: 6000000
+          max_jpy: 6999999
+          points: 20
+        - min_jpy: 5000000
+          max_jpy: 5999999
+          points: 15
+        - min_jpy: 4000000
+          max_jpy: 4999999
+          points: 10
+        - min_jpy: 3000000
+          max_jpy: 3999999
+          points: 5
+        - min_jpy: 0
+          max_jpy: 2999999
+          points: 0
+
+    - name: "age"
+      label_en: "Age"
+      label_jp: "年齢"
+      brackets:
+        - max_age: 29
+          points: 15
+        - min_age: 30
+          max_age: 34
+          points: 10
+        - min_age: 35
+          max_age: 39
+          points: 5
+        - min_age: 40
+          points: 0
+
+    - name: "japanese_ability"
+      label_en: "Japanese Language Ability"
+      label_jp: "日本語能力"
+      options:
+        - value: "N1"
+          points: 15
+          description: "JLPT N1 or equivalent"
+        - value: "N2"
+          points: 10
+          description: "JLPT N2 or equivalent"
+        - value: "none"
+          points: 0
+          description: "No JLPT certification or below N2"
+
+  bonus_points:
+    - name: "japanese_university"
+      points: 10
+      description: "Graduated from a Japanese university"
+    - name: "top_university"
+      points: 10
+      description: "Graduated from a university ranked in top 300 globally (QS, THE, ARWU)"
+    - name: "jica_training"
+      points: 5
+      description: "Completed JICA training program"
+    - name: "advanced_project"
+      points: 5
+      description: "Engaged in advanced project designated by relevant minister"
+    - name: "sme_employment"
+      points: 10
+      description: "Employed by a qualifying small/medium enterprise promoting innovation"
+    - name: "patent"
+      points: 15
+      description: "Holds one or more patents"

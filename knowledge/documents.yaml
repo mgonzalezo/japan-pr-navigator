@@ -1,0 +1,196 @@
+documents:
+  - id: 1
+    name_en: "Application Form"
+    name_jp: "永住許可申請書"
+    notes: "Photo taken within 3 months, signed by applicant."
+    required_for: ["single", "married", "with_children"]
+    category: "core"
+
+  - id: 2
+    name_en: "Statement of Reasons"
+    name_jp: "申請理由書"
+    notes: "Reasons for coming, activities, contribution to Japan, future plans. Submit in both English and Japanese for clarity."
+    required_for: ["single", "married", "with_children"]
+    category: "core"
+
+  - id: 3
+    name_en: "Point Calculation Table"
+    name_jp: "ポイント計算表"
+    notes: "Must match your current HSP points."
+    required_for: ["single", "married", "with_children"]
+    category: "hsp"
+
+  - id: 4
+    name_en: "Point Proof Documents"
+    name_jp: "ポイント証明資料"
+    notes: "Degrees, JLPT certificates, salary certificates, etc."
+    required_for: ["single", "married", "with_children"]
+    category: "hsp"
+
+  - id: 5
+    name_en: "Certificate of Residence"
+    name_jp: "住民票"
+    notes: "For all family members. Ensure 'My Number' is omitted."
+    required_for: ["single", "married", "with_children"]
+    category: "core"
+
+  - id: 6
+    name_en: "Certificate of Employment"
+    name_jp: "在職証明書"
+    notes: "Issued by your current employer."
+    required_for: ["single", "married", "with_children"]
+    category: "employment"
+
+  - id: 7
+    name_en: "Salary Prospect Certificate"
+    name_jp: "給与見込証明書"
+    notes: "Shows expected future income. Must include company seal (shaiin) in red ink. Many employers lack a template for this."
+    required_for: ["single", "married", "with_children"]
+    category: "employment"
+
+  - id: 8
+    name_en: "Tax Payment Certificate (Part 3)"
+    name_jp: "納税証明書（その３）"
+    notes: "Proves no unpaid national taxes."
+    required_for: ["single", "married", "with_children"]
+    category: "tax"
+
+  - id: 9
+    name_en: "Resident Tax Certificate"
+    name_jp: "住民税課税証明書"
+    notes: "Shows taxable income for the required period."
+    required_for: ["single", "married", "with_children"]
+    category: "tax"
+
+  - id: 10
+    name_en: "Resident Tax Payment Certificate"
+    name_jp: "住民税納税証明書"
+    notes: "Shows resident tax was paid on time."
+    required_for: ["single", "married", "with_children"]
+    category: "tax"
+
+  - id: 11
+    name_en: "Pension Record"
+    name_jp: "被保険者記録照会回答票"
+    notes: "Official proof of pension payments."
+    required_for: ["single", "married", "with_children"]
+    category: "insurance"
+
+  - id: 12
+    name_en: "Health Insurance Card Copy"
+    name_jp: "健康保険証の写し"
+    notes: "Must black out insurer numbers and QR codes."
+    required_for: ["single", "married", "with_children"]
+    category: "insurance"
+
+  - id: 13
+    name_en: "Copy of Passport"
+    name_jp: "パスポートの写し"
+    notes: "Include pages with entry/exit stamps."
+    required_for: ["single", "married", "with_children"]
+    category: "identity"
+
+  - id: 14
+    name_en: "Copy of Residence Card"
+    name_jp: "在留カードの写し"
+    notes: "Front and back copies."
+    required_for: ["single", "married", "with_children"]
+    category: "identity"
+
+  - id: 15
+    name_en: "Bank Statements"
+    name_jp: "預金通帳の写し"
+    notes: "Proof of savings and financial stability."
+    required_for: ["single", "married", "with_children"]
+    category: "financial"
+
+  - id: 16
+    name_en: "Guarantor Letter"
+    name_jp: "身元保証書"
+    notes: "Signed by your guarantor (Japanese national or PR holder)."
+    required_for: ["single", "married", "with_children"]
+    category: "guarantor"
+
+  - id: 17
+    name_en: "Guarantor's ID"
+    name_jp: "身元保証人の身分証明書"
+    notes: "Driver's license or passport copy."
+    required_for: ["single", "married", "with_children"]
+    category: "guarantor"
+
+  - id: 18
+    name_en: "Guarantor's Employment Certificate"
+    name_jp: "身元保証人の在職証明書"
+    notes: "Proof of your guarantor's employment."
+    required_for: ["single", "married", "with_children"]
+    category: "guarantor"
+
+  - id: 19
+    name_en: "Guarantor's Tax Certificate"
+    name_jp: "身元保証人の課税証明書"
+    notes: "Proof of your guarantor's financial standing."
+    required_for: ["single", "married", "with_children"]
+    category: "guarantor"
+
+  - id: 20
+    name_en: "Guarantor's Resident Certificate"
+    name_jp: "身元保証人の住民票"
+    notes: "Guarantor's household registry."
+    required_for: ["single", "married", "with_children"]
+    category: "guarantor"
+
+  - id: 21
+    name_en: "Marriage Certificate"
+    name_jp: "婚姻証明書"
+    notes: "Required if applying with a spouse."
+    required_for: ["married", "with_children"]
+    category: "family"
+
+  - id: 22
+    name_en: "Spouse's Tax Certificates"
+    name_jp: "配偶者の課税・納税証明書"
+    notes: "Needed even if finances are separate."
+    required_for: ["married", "with_children"]
+    category: "family"
+
+  - id: 23
+    name_en: "Spouse's Pension Record"
+    name_jp: "配偶者の年金記録"
+    notes: "Proof of spouse's pension payments."
+    required_for: ["married", "with_children"]
+    category: "family"
+
+  - id: 24
+    name_en: "Spouse & Child Insurance"
+    name_jp: "配偶者・子の資格確認書"
+    notes: "Copy of dependents' insurance cards."
+    required_for: ["married", "with_children"]
+    category: "family"
+
+  - id: 25
+    name_en: "Home Photos"
+    name_jp: "自宅の写真"
+    notes: "Exterior, entrance, kitchen, living room."
+    required_for: ["single", "married", "with_children"]
+    category: "proof_of_life"
+
+  - id: 26
+    name_en: "Family Snapshots"
+    name_jp: "スナップ写真"
+    notes: "Minimum 5 shots with family or coworkers."
+    required_for: ["single", "married", "with_children"]
+    category: "proof_of_life"
+
+  - id: 27
+    name_en: "Acknowledgement Form"
+    name_jp: "了解書"
+    notes: "Agreement to inform Immigration of any changes."
+    required_for: ["single", "married", "with_children"]
+    category: "core"
+
+  - id: 28
+    name_en: "Processing Fee Slip"
+    name_jp: "手数料納付書"
+    notes: "For the 10,000 JPY revenue stamp upon approval. Buy at Post Office before visiting Immigration."
+    required_for: ["single", "married", "with_children"]
+    category: "core"

@@ -1,0 +1,47 @@
+faq:
+  - id: "faq_001"
+    question: "How long does the PR application take?"
+    answer: |
+      It depends heavily on your local Immigration Bureau. Tokyo can take 12-24 months.
+      Smaller offices like Hamamatsu or Nagano may process in 4-6 months.
+      The HSP fast-track (70+ points with 3 years residence, or 80+ with 1 year) does not
+      necessarily speed up the review, but it shortens the required residence period.
+    tags: ["timeline", "processing", "wait"]
+    visa_types: ["hsp", "engineer", "specialist", "all"]
+
+  - id: "faq_002"
+    question: "What is the HSP point system fast track?"
+    answer: |
+      If you score 70+ points on the HSP point system and have resided in Japan for 3+ years,
+      or 80+ points with 1+ year of residence, you can apply for PR without waiting the
+      standard 10 years. Points are calculated based on education, salary, age, experience,
+      Japanese ability, and bonus categories.
+    tags: ["hsp", "points", "fast_track", "eligibility"]
+    visa_types: ["hsp"]
+
+  - id: "faq_003"
+    question: "Do I need a guarantor for PR?"
+    answer: |
+      Yes. You need a guarantor (身元保証人) who is either a Japanese national or a permanent resident.
+      They must provide their employment certificate, tax certificate, resident certificate, and ID copy.
+      The guarantor is not financially liable but serves as a character reference.
+    tags: ["guarantor", "requirements"]
+    visa_types: ["hsp", "engineer", "specialist", "all"]
+
+  - id: "faq_004"
+    question: "What if Immigration asks for additional documents?"
+    answer: |
+      This is actually a positive sign. It means your application is on the final reviewer's desk.
+      Read the request carefully to determine if they want originals or copies.
+      Respond as quickly as possible to avoid delaying your approval.
+    tags: ["additional_documents", "phase_3", "review"]
+    visa_types: ["hsp", "engineer", "specialist", "all"]
+
+  - id: "faq_005"
+    question: "Can I apply for PR if I am married?"
+    answer: |
+      Yes. Being married adds extra document requirements: marriage certificate, spouse's tax
+      certificates, spouse's pension records, and dependent insurance cards. You must prove
+      your spouse's financial standing even if your finances are completely separate.
+    tags: ["married", "spouse", "family", "documents"]
+    visa_types: ["hsp", "engineer", "specialist", "all"]
