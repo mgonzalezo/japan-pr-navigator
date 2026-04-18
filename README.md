@@ -10,15 +10,19 @@ Ask natural language questions like:
 
 ---
 
-## Quick Start (5 Steps)
+## Quick Start (6 Steps)
 
 ### Prerequisites
 
+**For development and testing:**
 - Python 3.11+
-- [Ollama](https://ollama.ai) installed
-- [LM Studio](https://lmstudio.ai) installed (for chat UI) OR any MCP-compatible client
 - [Git](https://git-scm.com) installed
 - [GitHub CLI (`gh`)](https://cli.github.com) installed and authenticated (`gh auth login`)
+- [MCP Inspector](https://github.com/modelcontextprotocol/inspector) (installed automatically via `fastmcp dev inspector`)
+
+**For end-user chat experience (optional):**
+- [Ollama](https://ollama.ai) — local LLM runtime
+- An MCP-compatible client: [LM Studio](https://lmstudio.ai), [Claude Desktop](https://claude.ai/download), or [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
 
 ### Step 0: Create the GitHub repository (maintainer only)
 
@@ -46,7 +50,20 @@ cd japan-pr-navigator
 
 The setup script creates a virtual environment, installs dependencies, validates the knowledge base, and runs all tests.
 
-### Step 2: Pull a model via Ollama
+### Step 2: Test with the MCP Inspector
+
+No LLM needed. Launch the interactive web inspector to test all tools and resources directly:
+
+```bash
+source .venv/bin/activate
+PYTHONPATH=src DANGEROUSLY_OMIT_AUTH=true fastmcp dev inspector src/japan_pr_mcp/server.py:mcp
+```
+
+Open <http://localhost:6274> in your browser. You can call any tool, inspect inputs/outputs, and verify the server works. This is the recommended way to develop and debug.
+
+### Step 3: (Optional) Pull a model via Ollama
+
+Only needed if you want the full chat experience with an LLM:
 
 ```bash
 # Recommended: Best Japanese + English understanding
@@ -56,9 +73,7 @@ ollama pull qwen2.5:14b
 ollama pull llama3.1:8b
 ```
 
-> Steps 2-4 apply to both maintainers and contributors.
-
-### Step 3: Configure your MCP client
+### Step 4: Configure your MCP client
 
 **Option A: LM Studio (Recommended for end users)**
 
@@ -114,7 +129,7 @@ Add to `~/.claude/mcp-configs/mcp-servers.json`:
 }
 ```
 
-### Step 4: Start asking questions
+### Step 5: Start asking questions
 
 Open your MCP client and ask away:
 
